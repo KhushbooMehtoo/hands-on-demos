@@ -36,15 +36,29 @@
 #  Question 3: Count Vowels in a String
 # Write a program to count the number of vowels (a, e, i, o, u) in a string.
 
-def check(s):
-    flag = False
-    vowel="aeiou"
+# def check(s):
+#     flag = False
+#     vowel="aeiou"
     
-    for vol in vowel:
-        if vol in s:
-            flag=True
+#     for vol in vowel:
+#         if vol in s:
+#             flag=True
     
-    return flag
-print(check("khush"))
+#     return flag
+# print(check("khush"))
+
+#  Question 4: Print Pattern (Triangle)
+# Write a program to print a triangle pattern of stars.
+x=0
+y=8
+def star():
+    global x,y
+    if x==y:
+        return
+    x=x+1
+    print((y-x)*"*")
+    star()
+star()
+
 
     
