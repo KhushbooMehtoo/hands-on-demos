@@ -60,3 +60,23 @@
 #     star()
 # star()
 
+# def even(lis):
+    
+#     count=0
+#     for num in lis:
+#         if num % 2==0:
+#             print(num)
+#             count=count+1
+        
+#     return "Total Even numbers: ",count
+# print(even([2,4,3,4,1,5,6]))
+# remove duplicate from list
+def duplicate(lis):
+    arr=[]
+    for num in lis:
+        if num not in arr:
+            arr.append(num)
+            # print(arr)
+    
+    return arr
+print(duplicate([1,1,2,4,3,2,4,5,3]))

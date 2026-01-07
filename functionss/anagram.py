@@ -7,3 +7,4 @@ def anagram(s_one,s_two):
     
     return "Wrong input"
 print(anagram("khush","huskh"))
+
